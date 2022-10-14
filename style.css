@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    color: #011627;
+    background-color: #f7f7f7;
+    font-family: 'KoHo', sans-serif;
+  }
+
+  body {
+    font-family: Arial;
+    padding: 10px;
+  }
+  
+  h2{
+    text-align: center;
+    font-size: 30px;
+  }
+
+  p{
+    font-size: 18px;
+  }
+
+  a{
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:visited{
+    color: #011627;
+  }
+
+  /* Source code links in cards-------------------------------------------------------- */
+  .a2{
+    padding:2px 10px;
+    border: solid 1px #011627;
+  }
+
+  .a2:hover{
+    background-color: #008dd5;
+  }
+
+
+  /* Header/Blog Title */
+  .header {
+    padding: 2px;
+    text-align: center;
+    background: transparent;
+    margin-bottom: 10px;
+    border: solid 1px #011627;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+    border: solid 1px #011627;
+    padding-left: 10px;
+    margin: 10px;
+  }
+
+  a:hover{
+    /* background-color: #f71735; */
+    color: #f7f7f7;
+    border:solid 1px #f7f7f7;
+    transition: .2s;
+  }
+
+  .topnav2 div {
+    text-align: center;
+    padding:4px 10px;
+    text-decoration: none;
+    /* border: solid 1px #011627; */
+    margin: 2px;
+  }
+  
+  /* Change color on hover */
+
+h1:hover{
+    background-color: #008dd5;
+    color: #f7f7f7;
+    border:solid 1px #f7f7f7;
+    transition: .2s;
+}
+
+ img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ }
+  
+ /* Fake image --------------------------------------------- --------------------------------------------- */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 200px;
+    }
+  .award{
+    padding: 0%;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    padding: 10px;
+    margin-top: 0px;
+  }
+
+  .card h2{
+    border: solid 1px #011627;
+    margin-bottom: 5px;
+  }
+
+  .card h2:hover{
+      background-color: #ff9f1c;
+      color: #f7f7f7;
+      border:solid 1px #f7f7f7;
+      transition: .2s;
+  }
+  
+  .card p{
+    margin: 8px;
+  }
+ 
+  /* columns*/
+  /* this will work when the float isnt on*/
+  .maincolumn{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .column{
+      width: 30%;
+    }
+  
+    
+    /* Responsive layout - makes a three-column layout instead of a one-column layout */
+    @media (max-width: 800px) {
+      .maincolumn {
+        flex-direction: column;
+      }
+    }
+      
+      /*-------------------------------------------/
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .column {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+
+  /* this makes the links within the description wrap accorinf to the flex direction*/
+  .links{
+    justify-content: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .links p{
+    margin-left: 3px;
+  }
+
+  /*makes the topnav items flexbox*/
+
+  .topnav2{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .card iframe{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
